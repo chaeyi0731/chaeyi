@@ -1,4 +1,33 @@
 body {
   background-color: #f0eae2; // 밝고 따뜻한 색상 예시
   color: #333; // 기본 텍스트 색상
+  margin: 0;
+  padding: 0;
+}
+
+.rootDiv {
+  width: 100vw;
+  height: 100vh;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainWidgets {
+  width: 70vw;
+  height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: powderblue;
+  flex-wrap: wrap;
+
+  .maindiv {
+    text-align: center;
+    background-color: white;
+    width: 30vw;
+    height: 10vh;
+    color: #333;
+  }
 }
