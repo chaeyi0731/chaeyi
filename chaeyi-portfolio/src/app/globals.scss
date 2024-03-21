@@ -27,6 +27,20 @@ body {
   padding: 20px;
 }
 
+.aboutWidgets {
+  width: 50vw;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(181, 193, 170, 0.5); // 투명도 0.5로 변경
+  flex-wrap: wrap;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
 .maindiv {
   background-color: white;
   width: 20vw;
@@ -44,4 +58,19 @@ body {
   &:hover {
     background-color: rgba(208, 208, 208, 0.749); // 마우스 호버 시 배경색 변경
   }
+}
+
+.infowidgets{
+  display: flex;
+}
+.profileImg {
+  width: 20vw;
+  height: 15vw;
+  background-color: #333;
+}
+
+.info {
+  width: 20vw;
+  height: 15vw;
+  background-color: #333;
 }
