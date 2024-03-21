@@ -1,4 +1,47 @@
+// globals.scss
 body {
-  background-color: #f0eae2; // 밝고 따뜻한 색상 예시
+  background-image: url('https://img.freepik.com/free-photo/pink-flowers-green-leaves-white-surface_23-2147601157.jpg?w=1800&t=st=1711029380~exp=1711029980~hmac=9bb2d5e60a21efe610acf7ebc4f89ba24dca7c3c110dffcfb51f88f8d55a7d44');
   color: #333; // 기본 텍스트 색상
+}
+
+.rootDiv {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mainWidgets {
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(181, 193, 170, 0.5); // 투명도 0.5로 변경
+  flex-wrap: wrap;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.maindiv {
+  background-color: white;
+  width: 20vw;
+  height: 10vh;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px; // 모서리 둥글게
+  transition: background-color 0.3s; // 배경색 변경 시 부드러운 전환 효과
+
+  &:hover {
+    background-color: rgba(208, 208, 208, 0.749); // 마우스 호버 시 배경색 변경
+  }
 }
