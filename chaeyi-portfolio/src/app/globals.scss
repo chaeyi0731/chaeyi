@@ -1,21 +1,12 @@
 // globals.scss
 body {
-  width: 100vw;
-  height: 100vh;
-  background-color: #f0eae2; 
+  background-image: url('https://img.freepik.com/free-photo/pink-flowers-green-leaves-white-surface_23-2147601157.jpg?w=1800&t=st=1711029380~exp=1711029980~hmac=9bb2d5e60a21efe610acf7ebc4f89ba24dca7c3c110dffcfb51f88f8d55a7d44');
   color: #333; // 기본 텍스트 색상
-  margin: 0;
-  padding: 0;
-}
-
-.title {
-  color: #fff;
 }
 
 .rootDiv {
   width: 100vw;
   height: 100vh;
-  background-color: #333;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,11 +20,11 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: #ffefd5; // 파우더블루에서 더 부드러운 색으로 변경
+  background-color: rgba(181, 193, 170, 0.5); // 투명도 0.5로 변경
   flex-wrap: wrap;
-  border-radius: 10px; // 모서리 둥글게
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // 약간의 그림자 효과
-  padding: 20px; // 내부 여백 추가
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
 .maindiv {
@@ -51,6 +42,6 @@ body {
   transition: background-color 0.3s; // 배경색 변경 시 부드러운 전환 효과
 
   &:hover {
-    background-color: #f0eae2; // 마우스 호버 시 배경색 변경
+    background-color: rgba(208, 208, 208, 0.749); // 마우스 호버 시 배경색 변경
   }
 }
