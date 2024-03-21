@@ -1,8 +1,15 @@
+// globals.scss
 body {
-  background-color: #f0eae2; // 밝고 따뜻한 색상 예시
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0eae2; 
   color: #333; // 기본 텍스트 색상
   margin: 0;
   padding: 0;
+}
+
+.title {
+  color: #fff;
 }
 
 .rootDiv {
@@ -12,22 +19,38 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .mainWidgets {
-  width: 70vw;
+  width: 50vw;
   height: 50vh;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: powderblue;
+  background-color: #ffefd5; // 파우더블루에서 더 부드러운 색으로 변경
   flex-wrap: wrap;
+  border-radius: 10px; // 모서리 둥글게
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // 약간의 그림자 효과
+  padding: 20px; // 내부 여백 추가
+}
 
-  .maindiv {
-    text-align: center;
-    background-color: white;
-    width: 30vw;
-    height: 10vh;
-    color: #333;
+.maindiv {
+  background-color: white;
+  width: 20vw;
+  height: 10vh;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px; // 모서리 둥글게
+  transition: background-color 0.3s; // 배경색 변경 시 부드러운 전환 효과
+
+  &:hover {
+    background-color: #f0eae2; // 마우스 호버 시 배경색 변경
   }
 }
