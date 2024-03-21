@@ -1,13 +1,15 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import './globals.scss';
 import './page.module.css';
-import NavigationItem from '../component/NavigationItem';
 
 export default function Home() {
   return (
     <main>
       <div>
-        <NavigationItem path="/profile">profile</NavigationItem>
+        <Link href="/profile">
+          <div>profile</div>
+        </Link>
         <div></div>
         <div></div>
         <div></div>
