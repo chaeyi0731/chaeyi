@@ -1,9 +1,12 @@
 // globals.scss
 @import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
 
 body {
   background-image: url('https://img.freepik.com/free-photo/pink-flowers-green-leaves-white-surface_23-2147601157.jpg?w=1800&t=st=1711029380~exp=1711029980~hmac=9bb2d5e60a21efe610acf7ebc4f89ba24dca7c3c110dffcfb51f88f8d55a7d44');
   color: #333; // 기본 텍스트 색상
+  width: 100vw;
+  height: 100vh;
 }
 
 .rootDiv {
@@ -31,20 +34,21 @@ body {
 
 .aboutWidgets {
   width: 50vw;
-  height: 75vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: start;
-  align-items: center;
-  background-color: rgba(181, 193, 170, 0.5); // 투명도 0.5로 변경
+  // align-items: center;
+  background-color: rgba(181, 193, 170, 0.894); // 투명도 0.5로 변경
   flex-wrap: wrap;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  overflow-y: hidden;
+  overflow-x: hidden;
 
   hr {
-    border: 2px solid #333;
+    width: 100%;
+    background-color: #333;
   }
 }
 
@@ -68,18 +72,25 @@ body {
 }
 
 .infowidgets {
+  width: 50vw;
+  height: 45vh;
   display: flex;
+  justify-content: space-around;
 }
 .profileImg {
   width: 15vw;
-  height: 20vw;
+  height: 25vw;
   background-color: #333;
+  background-image: url('https://stellatalk.s3.ap-northeast-2.amazonaws.com/image/KakaoTalk_Photo_2024-02-25-21-38-35.jpeg');
+  background-size: cover;
+  background-position: center;
 }
 
 .info {
   width: 30vw;
   height: 20vw;
-  font: 1rem/1 'Gaegu';
+  font: 1.1rem 'Hi Melody';
+  font-weight: bold;
 
   li {
     margin-bottom: 1rem;
@@ -88,4 +99,10 @@ body {
   span {
     color: blue;
   }
+}
+
+.career {
+  width: 50vw;
+  height: 10vw;
+  font: 1.1rem 'gaegu';
 }
