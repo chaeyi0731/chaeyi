@@ -1,4 +1,6 @@
 // globals.scss
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
+
 body {
   background-image: url('https://img.freepik.com/free-photo/pink-flowers-green-leaves-white-surface_23-2147601157.jpg?w=1800&t=st=1711029380~exp=1711029980~hmac=9bb2d5e60a21efe610acf7ebc4f89ba24dca7c3c110dffcfb51f88f8d55a7d44');
   color: #333; // 기본 텍스트 색상
@@ -32,13 +34,18 @@ body {
   height: 75vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: start;
   align-items: center;
   background-color: rgba(181, 193, 170, 0.5); // 투명도 0.5로 변경
   flex-wrap: wrap;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  overflow-y: hidden;
+
+  hr {
+    border: 2px solid #333;
+  }
 }
 
 .maindiv {
@@ -60,17 +67,25 @@ body {
   }
 }
 
-.infowidgets{
+.infowidgets {
   display: flex;
 }
 .profileImg {
-  width: 20vw;
-  height: 15vw;
+  width: 15vw;
+  height: 20vw;
   background-color: #333;
 }
 
 .info {
-  width: 20vw;
-  height: 15vw;
-  background-color: #333;
+  width: 30vw;
+  height: 20vw;
+  font: 1rem/1 'Gaegu';
+
+  li {
+    margin-bottom: 1rem;
+  }
+
+  span {
+    color: blue;
+  }
 }
