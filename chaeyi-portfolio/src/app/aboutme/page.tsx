@@ -1,9 +1,11 @@
+import Navbar from '@/component/navbar';
 export default function AboutMe() {
   return (
     <main>
       <div className="rootDiv">
         <div>
           <h1>About Me</h1>
+          <Navbar activeMenu="About Me" />
           <div className="aboutWidgets">
             <div className="infowidgets">
               <div className="profileImg"></div>
