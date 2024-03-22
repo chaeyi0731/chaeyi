@@ -21,8 +21,16 @@ export default function AboutMe() {
               </div>
             </div>
             <hr />
-            <div>
-              <p>dldldld</p>
+            <div className="career">
+              <ul>
+                <h2>학력</h2>
+                <li>2019.08 ~ ing 건양 사이버 대학교 아동학과 휴학 [4학년 1학기]</li>
+                <li>2015.03 ~ 2018.02 대전생활과학고등학교 바이오케미컬과 졸업 </li>
+              </ul>
+              <ul>
+                <h2>교육이수사항</h2>
+                <li>2023.08~2024.03 IaaS기반 웹 서비스 개발자 과정 수료</li>
+              </ul>
             </div>
           </div>
         </div>
