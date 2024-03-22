@@ -16,6 +16,10 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  h1 {
+    text-align: center;
+  }
 }
 
 .mainWidgets {
@@ -34,7 +38,7 @@ body {
 
 .aboutWidgets {
   width: 50vw;
-  height: 70vh;
+  height: 72vh;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -105,4 +109,24 @@ body {
   width: 50vw;
   height: 10vw;
   font: 1.1rem 'gaegu';
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+a {
+  color: #aaa;
+  text-decoration: none;
+
+  &:hover {
+    color: #333;
+  }
+}
+
+.active {
+  color: #333;
+  font-weight: bold;
 }
