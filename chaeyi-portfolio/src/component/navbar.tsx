@@ -7,7 +7,7 @@ interface NavbarProps {
 export default function Navbar({ activeMenu }: NavbarProps) {
   const categories = [
     { name: 'About Me', path: '/aboutme' },
-    { name: 'Stack', path: '/stack' },
+    { name: 'Skill', path: '/skill' },
     { name: 'Project', path: '/project' },
     { name: 'Contact', path: '/contact' },
   ];
