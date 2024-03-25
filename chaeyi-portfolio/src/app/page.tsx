@@ -16,7 +16,7 @@ export default function Home() {
             <div className="maindiv">Project</div>
           </Link>
           <Link href="/skill" style={{ textDecoration: 'none' }}>
-            <div className="maindiv">Skill</div>
+            <div className="maindiv">Skills</div>
           </Link>
           <Link href="/contact" style={{ textDecoration: 'none' }}>
             <div className="maindiv">Contact</div>
