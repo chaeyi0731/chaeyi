@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "JavaScript",
+    "image": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1706849663/noticon/lixve7usqyb2j9ialhfa.png",
+    "description": "javascript를 통해 브라우저의 DOM을 살펴보고 DOM에 접근하여 객체 속성을 바꾸는 방식을 사용해보았습니다."
+  },
+  {
+    "id": 2,
+    "name": "Python",
+    "image": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1566791609/noticon/nen1y11gazeqhejw7nm1.png",
+    "description": "python을 통하여 가상환경 구축 뿐만 아니라 데이터 분석 및 학습한 모델을 가지고 원하는 카테고리의 아이템들만 뽑아내는 듯의 크롤링도 해보았습니다."
+  }
+]

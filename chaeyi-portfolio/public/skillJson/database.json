@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Mysql",
+    "image": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1603423163/noticon/az0cvs28lm7gxoowlsva.png",
+    "description": "mariaDB와 마찬가지로 CRUD 구조 뿐만아닌 SQL문을 사용하여 데이터베이스와 테이블, 데이터를 삽입 추출을 하였고 join을 사용하여 서로 다른 테이블의 컬럼을 참조하는 방식을 사용하였습니다."
+  },
+  {
+    "id": 2,
+    "name": "MariaDB",
+    "image": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1579928281/noticon/wfykhuhsg5hfddh6ok0o.png",
+    "description": "MYsql과 마찬가지로 CRUD 구조 뿐만아닌 SQL문을 사용하여 데이터베이스와 테이블, 데이터를 삽입 추출을 하였고 join을 사용하여 서로 다른 테이블의 컬럼을 참조하는 방식을 사용하였습니다."
+  },
+  {
+    "id": 2,
+    "name": "AWS RDS",
+    "image": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1683592944/noticon/plcvyiwmdh4adlt8dxgo.png",
+    "description": "AWS로 각자의 로컬 뿐만 아닌 팀단위의 database 공유를 통해 팀과 함께 한개의 DB로 서로 데이터베이스 테이블 생성 및 참조를 진행하였습니다. RDS도 마찬가지로 Mysql과 mariaDB를 사용했습니다."
+  }
+]

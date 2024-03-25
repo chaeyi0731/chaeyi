@@ -15,8 +15,8 @@ export default function Home() {
           <Link href="/project" style={{ textDecoration: 'none' }}>
             <div className="maindiv">Project</div>
           </Link>
-          <Link href="/stack" style={{ textDecoration: 'none' }}>
-            <div className="maindiv">Stack</div>
+          <Link href="/skill" style={{ textDecoration: 'none' }}>
+            <div className="maindiv">Skills</div>
           </Link>
           <Link href="/contact" style={{ textDecoration: 'none' }}>
             <div className="maindiv">Contact</div>
