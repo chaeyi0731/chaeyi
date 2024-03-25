@@ -132,3 +132,26 @@ a {
   color: #333;
   font-weight: bold;
 }
+
+.img {
+  width: 5vw;
+  height: 5vh;
+}
+
+/* styles/SliderStyles.css */
+.skillCategory {
+  margin: 20px 0;
+}
+
+.skill {
+  text-align: center;
+  padding: 10px;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; /* 이미지를 원형으로 표시하려면 */
+  overflow: hidden; /* 원형 이미지를 위해 */
+}
