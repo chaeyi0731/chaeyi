@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Node",
+    "image": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1634264836/noticon/uxvdxcyvs5ocrxhacfj6.png",
+    "description": "Node를 사용하여 req ,res를 이해하고 파일을 읽어 서버에게 보여주는 방식을 사용했습니다."
+  },
+  {
+    "id": 2,
+    "name": "Express",
+    "image": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1597622806/noticon/avedhz3pvaij65k3ztar.png",
+    "description": "get,post를 사용하여 node보단 간결하고 가독성이 좋도록 서버의 요청과 응답 처리를 하였습니다."
+  },
+  {
+    "id": 3,
+    "name": "fastAPI",
+    "image": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1632975189/noticon/jlfwseiqspqkzrr6vrhx.png",
+    "description": "python에서의 fastApI를 통해 javascript의 express와 같은 서버 요청과 응답처리를 하였습니다."
+  },
+  {
+    "id": 4,
+    "name": "flask",
+    "image": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1566919737/noticon/gjxns0py6vnakzyu3msu.png",
+    "description": "python에서 javascript의 node와 같이 서버로 문서를 보내는 역할을 하였습니다."
+  }
+]
