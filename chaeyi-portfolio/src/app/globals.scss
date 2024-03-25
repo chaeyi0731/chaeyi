@@ -57,6 +57,19 @@ body {
   }
 }
 
+.skillWidgets {
+  width: 70vw;
+  height: 72vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-color: rgba(181, 193, 170, 0.894);
+  flex-wrap: wrap;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
 .maindiv {
   background-color: white;
   width: 20vw;
@@ -133,18 +146,20 @@ a {
   font-weight: bold;
 }
 
-.img {
-  width: 5vw;
-  height: 5vh;
-}
 .skillCategory {
-  width: 50%;
-  height: 100%;
-}
-.imageContainer {
-  display: flex;
+  max-width: 15vw;
+  margin: auto;
+  text-align: center;
   justify-content: center;
   align-items: center;
-  border-radius: 50%; /* 이미지를 원형으로 표시하려면 */
-  overflow: hidden; /* 원형 이미지를 위해 */
+  font: 1.1rem 'Do Hyeon';
+  background-color: #eae9ee4e;
+  border-radius: 20%;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
