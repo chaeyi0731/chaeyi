@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from '../../component/navbar';
 import Slider from 'react-slick';
-import Image from 'next/image'; // Image 컴포넌트를 import 합니다.
+import Image from 'next/image';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -10,8 +10,9 @@ const settings = {
   dots: true,
   infinite: true,
   speed: 500,
-  slidesToShow: 3,
-  slidesToScroll: 1,
+  slidesToShow: 1,
+  autoplay: true, // 자동 재생 활성화
+  autoplaySpeed: 4000, // 2초마다 슬라이드 전환
 };
 
 interface Skill {
@@ -49,24 +50,26 @@ const Skills: React.FC = () => {
   return (
     <main>
       <div className="rootDiv">
-        <Navbar activeMenu="Skill" />
-        <h1>Skills</h1>
-        <div className="aboutWidgets">
-          {Object.entries(skillsData).map(([category, skills]) => (
-            <div key={category} className="skillCategory">
-              <p>{category}</p>
-              <Slider {...settings}>
-                {skills.map((skill) => (
-                  <div key={skill.id} className="skill">
-                    <div>
-                      <Image src={skill.image} alt={skill.name} width={100} height={100} objectFit="cover" />
+        <div>
+          <h1>Skills</h1>
+          <Navbar activeMenu="Skill" />
+          <div className="skillWidgets">
+            {Object.entries(skillsData).map(([category, skills]) => (
+              <div key={category} className="skillCategory">
+                <p>{category}</p>
+                <Slider {...settings}>
+                  {skills.map((skill) => (
+                    <div key={skill.id} className="skill">
+                      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100px' }}>
+                        <Image src={skill.image} alt={skill.name} width={100} height={100} />
+                      </div>
+                      <p>{skill.name}</p>
                     </div>
-                    <p>{skill.name}</p>
-                  </div>
-                ))}
-              </Slider>
-            </div>
-          ))}
+                  ))}
+                </Slider>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </main>
