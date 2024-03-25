@@ -42,7 +42,7 @@ const Projects = () => {
             <div className="gallery">
               {projects.map((project) => (
                 <div key={project.id} className="gallery-item">
-                  <Link href={`/projects/${project.id}`} passHref>
+                  <Link href={`/project/${project.id}`} passHref>
                     <div>
                       <img src={project.image} alt={project.name} style={{ width: '100%', height: 'auto' }} />
                       <h2>{project.name}</h2>
