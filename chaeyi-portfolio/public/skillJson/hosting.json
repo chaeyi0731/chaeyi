@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "EC2",
+    "image": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1629987467/noticon/o0ua9qgyuuoazjqwwvas.png",
+    "description": "EC2 인스턴스를 통해 프로젝트를 배포하였습니다."
+  },
+  {
+    "id": 2,
+    "name": "firebase",
+    "image": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1566913958/noticon/uoqjdixts4lwsgtsa1pd.png",
+    "description": "다양한 분야에 사용되는 강력한 프로그래밍 언어입니다."
+  },
+  {
+    "id": 4,
+    "name": "vercel",
+    "image": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1679312641/noticon/rx8rni4npifrbo9ckxmt.png",
+    "description": "다양한 분야에 사용되는 강력한 프로그래밍 언어입니다."
+  }
+]
