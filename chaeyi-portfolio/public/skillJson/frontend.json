@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "HTML",
+    "image": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1566995514/noticon/jufppyr8htislboas4ve.png",
+    "description": "HTML을 사용하여 요소의 컨테이너와 부모 형제 구조를 통해 다양한 요소를 사용하여 문서를 작성하였습니다."
+  },
+  {
+    "id": 2,
+    "name": "CSS",
+    "image": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1566912109/noticon/puksfce6wca36hes1vom.png",
+    "description": "CSS를 사용하여 정적문서의 스타일을 다채롭게 꾸며보았습니다."
+  },
+  {
+    "id": 3,
+    "name": "SCSS",
+    "image": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1566911998/noticon/pgp6gfml2syj2xujx5qp.png",
+    "description": "SCSS로 부모형제간의 스타일을 객체로 구현하여 스타일의 복잡성을 줄였습니다."
+  },
+  {
+    "id": 4,
+    "name": "Tailwind",
+    "image": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1657314490/noticon/ur8spzfcq4acw7ijp68v.png",
+    "description": "Class 방식을 통해 일일히 class name을 짓지 않고 라이브러리에 작성된 class를 가져와 가독성을 높였습니다."
+  },
+  {
+    "id": 5,
+    "name": "React",
+    "image": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1566557331/noticon/d5hqar2idkoefh6fjtpu.png",
+    "description": "기존에 html의 정적 문서를 사용하지 않고 동적으로 문서를 사용함으로써 문서 작성과 컴포넌트를 통해 UI에서 재사용 가능한 함수들을 분리하여 사용하였습니다."
+  },
+  {
+    "id": 6,
+    "name": "Next.js",
+    "image": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1566879300/noticon/fvty9lnsbjol5lq9u3by.svg",
+    "description": "Next의 서버리스를 사용 하여 멀티페이지 페이지를 구성하였습니다."
+  }
+]
