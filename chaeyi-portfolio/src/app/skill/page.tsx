@@ -51,21 +51,23 @@ const Skills: React.FC = () => {
       <div className="rootDiv">
         <Navbar activeMenu="Skill" />
         <h1>Skills</h1>
-        {Object.entries(skillsData).map(([category, skills]) => (
-          <div key={category} className="skillCategory">
-            <h2>{category}</h2>
-            <Slider {...settings}>
-              {skills.map((skill) => (
-                <div key={skill.id} className="skill">
-                  <div className="imageContainer">
-                    <Image src={skill.image} alt={skill.name} width={100} height={100} objectFit="cover" />
+        <div className="aboutWidgets">
+          {Object.entries(skillsData).map(([category, skills]) => (
+            <div key={category} className="skillCategory">
+              <p>{category}</p>
+              <Slider {...settings}>
+                {skills.map((skill) => (
+                  <div key={skill.id} className="skill">
+                    <div>
+                      <Image src={skill.image} alt={skill.name} width={100} height={100} objectFit="cover" />
+                    </div>
+                    <p>{skill.name}</p>
                   </div>
-                  <p>{skill.name}</p>
-                </div>
-              ))}
-            </Slider>
-          </div>
-        ))}
+                ))}
+              </Slider>
+            </div>
+          ))}
+        </div>
       </div>
     </main>
   );
