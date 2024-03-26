@@ -1,9 +1,7 @@
 'use client';
-
-// pages/projects/index.tsx
-
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Modal from 'react-modal';
 import Navbar from '../../component/navbar';
 
 interface Project {
@@ -22,6 +20,7 @@ interface Project {
 
 const Projects = () => {
   const [projects, setProjects] = useState<Project[]>([]);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null); // 선택된 프로젝트 상태 추가
 
   useEffect(() => {
     // 이 경로는 실제 프로젝트에 맞게 조정해야 합니다.
@@ -31,6 +30,14 @@ const Projects = () => {
       })
       .catch((err) => console.error('Failed to load project data:', err));
   }, []);
+
+  const openModal = (project: Project) => {
+    setSelectedProject(project);
+  };
+
+  const closeModal = () => {
+    setSelectedProject(null);
+  };
 
   return (
     <main>
@@ -42,16 +49,32 @@ const Projects = () => {
             <div className="gallery">
               {projects.map((project) => (
                 <div key={project.id} className="gallery-item">
-                  <Link href={`/project/${project.id}`} passHref>
-                    <div>
-                      <img src={project.image} alt={project.name} style={{ width: '100%', height: 'auto' }} />
-                      <h2>{project.name}</h2>
-                    </div>
-                  </Link>
+                  <div onClick={() => openModal(project)}>
+                    {' '}
+                    {/* 모달 열기 이벤트 핸들러 추가 */}
+                    <img src={project.image} alt={project.name} style={{ width: '100%', height: 'auto' }} />
+                    <h2>{project.name}</h2>
+                  </div>
                 </div>
               ))}
             </div>
           </div>
+          <Modal isOpen={!!selectedProject} onRequestClose={closeModal} contentLabel="Project Modal" className="project-modal" overlayClassName="project-modal-overlay">
+            {selectedProject && (
+              <div className="modal">
+                <div className="modal-content">
+                  <div>
+                    <h2>{selectedProject.name}</h2>
+                    <img src={selectedProject.image} alt={selectedProject.name} />
+                  </div>
+                  <div className="modal-content-description">
+                    <p>{selectedProject.description}</p>
+                    <button onClick={closeModal}>Close</button>
+                  </div>
+                </div>
+              </div>
+            )}
+          </Modal>
         </div>
       </div>
     </main>
