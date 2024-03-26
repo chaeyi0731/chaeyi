@@ -5,7 +5,7 @@
 // Noto Sans KR Montserrat
 
 body {
-  background-color: #eae9ee;
+  background-color: #f0eeea;
   color: #333; // 기본 텍스트 색상
   width: 100vw;
   height: 100vh;
@@ -320,4 +320,26 @@ a {
 
 .contact > .contextDiv {
   flex-basis: 45%; /* 각 contextDiv의 초기 크기 설정 */
+}
+
+.page-transition-enter {
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.page-transition-exit {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transform: translateX(10px);
+  transition: opacity 300ms, transform 300ms;
 }
