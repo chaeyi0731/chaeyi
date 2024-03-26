@@ -1,6 +1,7 @@
 'use client';
+
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
+
 import Modal from 'react-modal';
 import Navbar from '../../component/navbar';
 
@@ -50,8 +51,6 @@ const Projects = () => {
               {projects.map((project) => (
                 <div key={project.id} className="gallery-item">
                   <div onClick={() => openModal(project)}>
-                    {' '}
-                    {/* 모달 열기 이벤트 핸들러 추가 */}
                     <img src={project.image} alt={project.name} style={{ width: '100%', height: 'auto' }} />
                     <h2>{project.name}</h2>
                   </div>
@@ -63,14 +62,55 @@ const Projects = () => {
             {selectedProject && (
               <div className="modal">
                 <div className="modal-content">
-                  <div>
+                  <div className="modal-left">
                     <h2>{selectedProject.name}</h2>
                     <img src={selectedProject.image} alt={selectedProject.name} />
                   </div>
-                  <div className="modal-content-description">
-                    <p>{selectedProject.description}</p>
-                    <button onClick={closeModal}>Close</button>
+                  <div className="modal-right">
+                    <div>
+                      <p>{selectedProject.description}</p>
+                      {selectedProject.githubURL && (
+                        <button onClick={() => window.open(selectedProject.githubURL, '_blank')} className="button-git">
+                          Github
+                        </button>
+                      )}
+                      {selectedProject.blogURL && (
+                        <button onClick={() => window.open(selectedProject.blogURL, '_blank')} className="button-read">
+                          ReadMore
+                        </button>
+                      )}
+                      <div>
+                        <h3>Frontend:</h3>
+                        <ul>
+                          {selectedProject.frontend?.technologies.map((tech, index) => (
+                            <li key={index}>{tech}</li>
+                          ))}
+                        </ul>
+                        <h3>Backend:</h3>
+                        <ul>
+                          {selectedProject.backend?.technologies.map((tech, index) => (
+                            <li key={index}>{tech}</li>
+                          ))}
+                        </ul>
+                        <h3>Database:</h3>
+                        <ul>
+                          {selectedProject.database?.technologies.map((tech, index) => (
+                            <li key={index}>{tech}</li>
+                          ))}
+                        </ul>
+                        <h3>배포:</h3>
+                        <ul>
+                          {selectedProject.deployment?.technologies.map((tech, index) => (
+                            <li key={index}>{tech}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
                   </div>
+
+                  <button className="modal-button" onClick={closeModal}>
+                    ❌
+                  </button>
                 </div>
               </div>
             )}
