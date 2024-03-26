@@ -290,3 +290,34 @@ a {
   top: 1vw;
   left: 95%;
 }
+
+.contextDiv {
+  background-color: #fff;
+  color: #333;
+  width: 20vw;
+  height: 5vw;
+  align-items: center;
+  text-align: center;
+  font: 1.4rem 'Do Hyeon';
+  margin-bottom: 20px; /* 각 contextDiv 사이의 간격 조절 */
+  border-radius: 10px; /* 보더를 둥글게 만듦 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+}
+
+.contextDiv img {
+  margin-top: 1vw;
+  width: 15%;
+  height: auto;
+  border-radius: 50%; /* 이미지를 원형으로 만듦 */
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact > .contextDiv {
+  flex-basis: 45%; /* 각 contextDiv의 초기 크기 설정 */
+}
