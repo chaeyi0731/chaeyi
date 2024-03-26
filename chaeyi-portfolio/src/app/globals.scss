@@ -1,6 +1,8 @@
 // globals.scss
 
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
+// Noto Sans KR Montserrat
 
 body {
   background-color: #eae9ee;
@@ -85,7 +87,7 @@ body {
   align-items: center;
   border-radius: 5px; // 모서리 둥글게
   transition: background-color 0.3s; // 배경색 변경 시 부드러운 전환 효과
-  font: 1.7rem 'Do Hyeon';
+  font: 1.7rem 'Montserrat';
 
   &:hover {
     background-color: rgba(208, 208, 208, 0.749); // 마우스 호버 시 배경색 변경
@@ -125,7 +127,7 @@ body {
 .career {
   width: 50vw;
   height: 10vw;
-  font: 1.1rem 'Do Hyeon';
+  font: 1rem 'Do Hyeon', 'Montserrat';
 }
 
 .navbar {
@@ -208,6 +210,7 @@ a {
       display: flex;
       flex-direction: row;
       flex: 1;
+      font: 1.1rem 'Do Hyeon';
 
       img {
         max-width: 95%;
@@ -223,6 +226,7 @@ a {
 
         p {
           margin-top: 0;
+          font: 1.1rem 'Do Hyeon';
         }
       }
     }
@@ -235,6 +239,7 @@ a {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  font: 1rem 'Do Hyeon';
   .button-git {
     margin-top: 20px;
     padding: 10px 20px;
