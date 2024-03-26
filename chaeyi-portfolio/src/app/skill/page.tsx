@@ -5,6 +5,7 @@ import Slider from 'react-slick';
 import Image from 'next/image';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { motion } from 'framer-motion';
 
 const settings = {
   dots: true,
@@ -49,29 +50,31 @@ const Skills: React.FC = () => {
 
   return (
     <main>
-      <div className="rootDiv">
-        <div>
-          <h1>Skills</h1>
-          <Navbar activeMenu="Skill" />
-          <div className="skillWidgets">
-            {Object.entries(skillsData).map(([category, skills]) => (
-              <div key={category} className="skillCategory">
-                <p>{category}</p>
-                <Slider {...settings}>
-                  {skills.map((skill) => (
-                    <div key={skill.id} className="skill">
-                      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100px' }}>
-                        <Image src={skill.image} alt={skill.name} width={100} height={100} />
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1 }}>
+        <div className="rootDiv">
+          <div>
+            <h1>Skills</h1>
+            <Navbar activeMenu="Skill" />
+            <div className="skillWidgets">
+              {Object.entries(skillsData).map(([category, skills]) => (
+                <div key={category} className="skillCategory">
+                  <p>{category}</p>
+                  <Slider {...settings}>
+                    {skills.map((skill) => (
+                      <div key={skill.id} className="skill">
+                        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100px' }}>
+                          <Image src={skill.image} alt={skill.name} width={100} height={100} />
+                        </div>
+                        <p>{skill.name}</p>
                       </div>
-                      <p>{skill.name}</p>
-                    </div>
-                  ))}
-                </Slider>
-              </div>
-            ))}
+                    ))}
+                  </Slider>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </main>
   );
 };
