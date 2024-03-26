@@ -11,7 +11,7 @@ export default function AboutMe() {
             <div className="infowidgets">
               <div className="profileImg"></div>
               <div className="info">
-                <h1>👨‍💻 Web Developer</h1>
+                <h1>👩🏻‍💻 Web Developer</h1>
                 <ul>
                   <li>
                     안녕하세요! <span>꾸준히 성장하는 개발자</span> 이채이 입니다.
