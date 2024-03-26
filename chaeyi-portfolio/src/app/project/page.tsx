@@ -1,5 +1,6 @@
 'use client';
 
+import { motion } from 'framer-motion';
 import React, { useState, useEffect } from 'react';
 
 import Modal from 'react-modal';
@@ -42,81 +43,83 @@ const Projects = () => {
 
   return (
     <main>
-      <div className="rootDiv">
-        <h1>Projects</h1>
-        <div>
-          <Navbar activeMenu="Project" />
-          <div className="skillWidgets">
-            <div className="gallery">
-              {projects.map((project) => (
-                <div key={project.id} className="gallery-item">
-                  <div onClick={() => openModal(project)}>
-                    <img src={project.image} alt={project.name} style={{ width: '100%', height: 'auto' }} />
-                    <h2>{project.name}</h2>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          <Modal isOpen={!!selectedProject} onRequestClose={closeModal} contentLabel="Project Modal" className="project-modal" overlayClassName="project-modal-overlay">
-            {selectedProject && (
-              <div className="modal">
-                <div className="modal-content">
-                  <div className="modal-left">
-                    <h2>{selectedProject.name}</h2>
-                    <img src={selectedProject.image} alt={selectedProject.name} />
-                  </div>
-                  <div className="modal-right">
-                    <div>
-                      <p>{selectedProject.description}</p>
-                      {selectedProject.githubURL && (
-                        <button onClick={() => window.open(selectedProject.githubURL, '_blank')} className="button-git">
-                          Github
-                        </button>
-                      )}
-                      {selectedProject.blogURL && (
-                        <button onClick={() => window.open(selectedProject.blogURL, '_blank')} className="button-read">
-                          ReadMore
-                        </button>
-                      )}
-                      <div>
-                        <h3>Frontend:</h3>
-                        <ul>
-                          {selectedProject.frontend?.technologies.map((tech, index) => (
-                            <li key={index}>{tech}</li>
-                          ))}
-                        </ul>
-                        <h3>Backend:</h3>
-                        <ul>
-                          {selectedProject.backend?.technologies.map((tech, index) => (
-                            <li key={index}>{tech}</li>
-                          ))}
-                        </ul>
-                        <h3>Database:</h3>
-                        <ul>
-                          {selectedProject.database?.technologies.map((tech, index) => (
-                            <li key={index}>{tech}</li>
-                          ))}
-                        </ul>
-                        <h3>배포:</h3>
-                        <ul>
-                          {selectedProject.deployment?.technologies.map((tech, index) => (
-                            <li key={index}>{tech}</li>
-                          ))}
-                        </ul>
-                      </div>
+      <motion.main initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1 }}>
+        <div className="rootDiv">
+          <h1>Projects</h1>
+          <div>
+            <Navbar activeMenu="Project" />
+            <div className="skillWidgets">
+              <div className="gallery">
+                {projects.map((project) => (
+                  <div key={project.id} className="gallery-item">
+                    <div onClick={() => openModal(project)}>
+                      <img src={project.image} alt={project.name} style={{ width: '100%', height: 'auto' }} />
+                      <h2>{project.name}</h2>
                     </div>
                   </div>
-
-                  <button className="modal-button" onClick={closeModal}>
-                    ❌
-                  </button>
-                </div>
+                ))}
               </div>
-            )}
-          </Modal>
+            </div>
+            <Modal isOpen={!!selectedProject} onRequestClose={closeModal} contentLabel="Project Modal" className="project-modal" overlayClassName="project-modal-overlay">
+              {selectedProject && (
+                <div className="modal">
+                  <div className="modal-content">
+                    <div className="modal-left">
+                      <h2>{selectedProject.name}</h2>
+                      <img src={selectedProject.image} alt={selectedProject.name} />
+                    </div>
+                    <div className="modal-right">
+                      <div>
+                        <p>{selectedProject.description}</p>
+                        {selectedProject.githubURL && (
+                          <button onClick={() => window.open(selectedProject.githubURL, '_blank')} className="button-git">
+                            Github
+                          </button>
+                        )}
+                        {selectedProject.blogURL && (
+                          <button onClick={() => window.open(selectedProject.blogURL, '_blank')} className="button-read">
+                            ReadMore
+                          </button>
+                        )}
+                        <div>
+                          <h3>Frontend:</h3>
+                          <ul>
+                            {selectedProject.frontend?.technologies.map((tech, index) => (
+                              <li key={index}>{tech}</li>
+                            ))}
+                          </ul>
+                          <h3>Backend:</h3>
+                          <ul>
+                            {selectedProject.backend?.technologies.map((tech, index) => (
+                              <li key={index}>{tech}</li>
+                            ))}
+                          </ul>
+                          <h3>Database:</h3>
+                          <ul>
+                            {selectedProject.database?.technologies.map((tech, index) => (
+                              <li key={index}>{tech}</li>
+                            ))}
+                          </ul>
+                          <h3>배포:</h3>
+                          <ul>
+                            {selectedProject.deployment?.technologies.map((tech, index) => (
+                              <li key={index}>{tech}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <button className="modal-button" onClick={closeModal}>
+                      ❌
+                    </button>
+                  </div>
+                </div>
+              )}
+            </Modal>
+          </div>
         </div>
-      </div>
+      </motion.main>
     </main>
   );
 };
