@@ -69,7 +69,7 @@ const Projects = () => {
                       <img src={selectedProject.image} alt={selectedProject.name} />
                     </div>
                     <div className="modal-right">
-                      <div>
+                      <div className="font">
                         <p>{selectedProject.description}</p>
                         {selectedProject.githubURL && (
                           <button onClick={() => window.open(selectedProject.githubURL, '_blank')} className="button-git">
