@@ -71,7 +71,7 @@
       "projectURL": "https://fir-practics-163f9.web.app/",
       "blogURL": "https://leecherry.tistory.com/2",
       "frontend": {
-        "technologies": ["React", "javascript", "CSS", "typescript"]
+        "technologies": [ "javascript", "CSS", "HTML"]
       },
       "backend": {
         "technologies": ["사용안함"]
@@ -82,7 +82,27 @@
       "deployment": {
         "technologies": ["firebase"]
       },
-      "description": "javascript의 eventhandler를 구현 해보기 위해 진행 한 간단한 project를 기획했다 setTimeout 을 사용하여 스코어를 구현 했으며  if문 조건문을 사용하여 클릭한 이미지가 푸바오 일 시 스코어 = 카운터가 증가하게 작성 했다 후에 if문을 추가하여 클릭한 이미지가 푸바오가 아닐 시 스코어 = 카운터가 하강한다. 해당 코드의 문제점은 다른 이미지를 누를시에 원래 있던 스코어에서 깎는게 아닌 바로 0으로 직행한다."
+      "description": "javascript의 eventhandler를 구현 해보기 위해 진행 한 간단한 project를 기획했다 setTimeout 을 사용하여 스코어를 구현 했으며  if문 조건문을 사용하여 클릭한 이미지가 푸바오 일 시 스코어 = 카운터가 증가하게 작성 했다 후에 if문을 추가하여 클릭한 이미지가 푸바오가 아닐 시 스코어 = 카운터가 하강한다. 해당 코드의 문제점은 다른 이미지를 누를시에 원래 있던 스코어에서 깎는게 아닌 바로 0으로 직행합니다.."
+    },{
+      "id": 5,
+      "name": "Portfolio ",
+      "image": "https://stellatalk.s3.ap-northeast-2.amazonaws.com/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA+2024-03-28+%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB+9.44.54.png",
+      "githubURL": "https://github.com/chaeyi0731/chaeyi ",
+      "projectURL": "https://fir-practics-163f9.web.app/",
+      "blogURL": "https://leecherry.tistory.com/2",
+      "frontend": {
+        "technologies": ["Naxt.js", "SCSS", "typescript"]
+      },
+      "backend": {
+        "technologies": ["Next의 서버리스 방식 사용함"]
+      },
+      "database": {
+        "technologies": ["사용안함"]
+      },
+      "deployment": {
+        "technologies": ["Vercel"]
+      },
+      "description": "Next.js를 사용하여 포트폴리오를 제작하였습니다. Next.js의 장점은 SEO가 좋다는 것과 SSR을 사용하여 페이지를 빠르게 랜더링 할 수 있다는 것을 알게 되었습니다. 해당 포트폴리오는 제가 진행한 프로젝트들을 소개하고 있으며 각 프로젝트의 기술스택과 프로젝트의 설명을 작성하였습니다. 또한 각 프로젝트의 github 주소와 프로젝트의 주소를 작성하였습니다."
     }
   ]
 }
