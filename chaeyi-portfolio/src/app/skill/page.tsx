@@ -11,6 +11,7 @@ const settings = {
   dots: true,
   infinite: true,
   speed: 500,
+  arrows: false,
   slidesToShow: 1,
   autoplay: true, // 자동 재생 활성화
   autoplaySpeed: 4000, // 2초마다 슬라이드 전환
