@@ -9,6 +9,12 @@ body {
   color: #333; // 기본 텍스트 색상
   width: 100vw;
   height: 100vh;
+  .mainp {
+    color: lightgray;
+    position: absolute;
+    top: 95%;
+    left: 90%;
+  }
 }
 
 .rootDiv {
@@ -115,22 +121,23 @@ body {
 .info {
   width: 30vw;
   height: 20vw;
-  font: 1.1rem 'Do Hyeon';
-  font-weight: bold;
+  ul {
+    font-family: 'noto sans kr';
 
-  li {
-    margin-bottom: 1rem;
-  }
+    li {
+      margin-bottom: 1rem;
+    }
 
-  span {
-    color: blue;
+    span {
+      color: blue;
+    }
   }
 }
 
 .career {
   width: 50vw;
   height: 10vw;
-  font: 1rem 'Do Hyeon', 'Montserrat';
+  font: 1rem 'Noto sans kr', 'Montserrat';
 }
 
 .navbar {
@@ -186,6 +193,9 @@ a {
   text-align: center;
   color: inherit;
   text-decoration: none;
+  &:hover {
+    cursor: pointer !important;
+  }
 }
 
 .project-modal {
@@ -194,7 +204,7 @@ a {
   width: 75vw;
   height: 72vh;
   position: absolute;
-  top: 60%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000;
@@ -242,7 +252,7 @@ a {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  font: 1rem 'Do Hyeon';
+  font: 1rem 'noto sans kr';
 
   .button-project {
     margin-left: 2vw;
@@ -291,7 +301,7 @@ a {
   }
   li {
     margin-right: 10px;
-    font-family: 'do hyeon';
+    font-family: 'noto sans kr';
   }
 }
 
