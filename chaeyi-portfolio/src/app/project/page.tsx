@@ -46,6 +46,7 @@ const Projects = () => {
       <motion.main initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1 }}>
         <div className="rootDiv">
           <h1>Projects</h1>
+          <h3>클릭하여 자세히보기</h3>
           <div>
             <Navbar activeMenu="Project" />
             <div className="skillWidgets">
