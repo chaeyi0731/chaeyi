@@ -76,6 +76,11 @@ const Projects = () => {
                             Github
                           </button>
                         )}
+                        {selectedProject.projectURL && (
+                          <button onClick={() => window.open(selectedProject.projectURL, '_blank')} className="button-project">
+                            Project Site
+                          </button>
+                        )}
                         {selectedProject.blogURL && (
                           <button onClick={() => window.open(selectedProject.blogURL, '_blank')} className="button-read">
                             ReadMore
