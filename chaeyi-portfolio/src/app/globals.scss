@@ -243,6 +243,20 @@ a {
   justify-content: space-around;
   align-items: center;
   font: 1rem 'Do Hyeon';
+
+  .button-project {
+    margin-left: 2vw;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #c5709c;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #4d162c;
+    }
+  }
   .button-git {
     margin-top: 20px;
     padding: 10px 20px;
@@ -260,7 +274,7 @@ a {
     margin-top: 20px;
     padding: 10px 20px;
     border: none;
-    margin-left: 5vw;
+    margin-left: 2vw;
     background-color: #73c570;
     color: white;
     cursor: pointer;
