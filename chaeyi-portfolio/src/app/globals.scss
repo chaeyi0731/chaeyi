@@ -237,7 +237,7 @@ a {
 }
 
 .modal-right {
-  margin-top: 5vw;
+  margin-top: 2vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -274,6 +274,10 @@ a {
     list-style: none;
     padding-left: 0;
     display: flex;
+  }
+  li {
+    margin-right: 10px;
+    font-family: 'do hyeon';
   }
 }
 
@@ -344,4 +348,8 @@ a {
   opacity: 0;
   transform: translateX(10px);
   transition: opacity 300ms, transform 300ms;
+}
+
+.font {
+  font: 1.1rem 'Do Hyeon';
 }
